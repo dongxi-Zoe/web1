@@ -1,0 +1,36 @@
+<html>
+<head> 
+	<title>Document</title>
+</head>
+<body>
+<!--
+a 태그 : anchor. 다른 페이지로의 링크를 걸어주는 태그
+ - 속성이 없으면 아무런 작업도 하지 않음
+ - 특별히 css로 지정하지 않으면 자동으로 파란 글자색의 밑줄이 그어지고, 방문했던 링크는 자주색으로 변함
+ - href="경로 및 파일명" : a 태그의 필수 속성으로 클릭시 이동할 곳의 경로와 파일명을 지정
+ 	경로 : 현재 위치와 상관없이 지정하는 절대경로와 현재 위치에서의 상대적인 상대경로로 나뉨
+
+   절대경로 : 드라이브명 부터 입력하는 '물리적 절대경로'와 http부터 입력하는 '웹 절대경로'의 두 가지가 있으며 절대 경로를 사용하려면 무조건 웹 절대경로를 사용해야 함
+   웹 절대경로는 뉴스레터 등 다른 사이트에서 접근해야 하는 경우 많이 사용됨
+   예) 'http://www.gmarket.co.kr/event/img/a.jpg'
+
+   상대경로 : 현재 위치와 참조하려는 파일의 위치를 상대적으로 계산하여 사용함
+    - 현재 위치 : 생략하거나 ./로 입력
+	- 상위 폴더 : ../로 입력하며 여러 단계의 상위 폴더일 경우 여러 번 입력함
+	- 하위 폴더 : 하위폴더명/ 로 하위폴더에 접근
+ - title="텍스트" : 태그의 영역에 마우스 오버시 툴팁으로 보여줄 텍스트를 지정 
+ - target="_self|_new|_blank|_parent|화면이름" : 이동한 페이지가 보여질 곳을 지정
+    _new : 새 탭으로 링크를 열어주며, 이미 열려 있는 경우 그 탭으로 이동
+	_blank:  새 탭으로 링크를 열어주며, 클릭할 때 마다 새로운 탭을 생성
+	_parent와 화면이름은 frameset태그 등을 이용하여 화면을 분할했을 때 각 화면을 의미하는 값
+	 - _parent : 프레임으 나누기 전의 화면을 타겟으로 선정
+	 - 화면이름 : 나누어진 프레임들 중 하나를 타겟으로 선정(이름을 잘못 입력할 경우 _new로 취급함)	 
+-->
+<a href="font_tag.html" title="폰트 태그 설정 화면">font Tag</a><br />
+<a href="./addr_tag.html" title="address 태그">address 태그<br />사용하는 파일 링크</a><br />
+<a href="http://www.google.com" target="_new">Google</a><br />
+<a href="http://www.naver.com" target="_blank">Naver</a><br /><br />
+<a href="img_tag.html"><img src="img\c.jpg" width="150" border="0"/></a>
+<br /><br /><br /><br />
+</body>
+</html>
